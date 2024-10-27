@@ -66,3 +66,34 @@ a:hover {
         @apply px-4; /* Adjust padding for smaller screens */
     }
 }   
+
+.ionicon:hover {
+    color: #4DB8FF;
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Additional Styles for Enhanced Usability */
+h1, h2, h3, h4 {
+    font-family: 'Inter', sans-serif; /* Ensure headers use the same font */
+}
+
+a {
+    transition: color 0.2s ease-in-out; /* Smooth transition for links */
+}
+
+a:hover {
+    color: #4DB8FF; /* Hover color for all links */
+}
+
+/* Container for the main content */
+.main-container {
+    @apply bg-opacity-90 py-4; /* Adding background opacity and padding for main container */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .full-container {
+        @apply px-4; /* Adjust padding for smaller screens */
+    }
+}   
