@@ -28,7 +28,8 @@
       "@assets/": [
         "./src/assets/*"
       ]
-    }
+    },
+    "incremental": true
   },
   "include": [
     "next-env.d.ts",
