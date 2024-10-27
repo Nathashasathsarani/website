@@ -1,23 +1,26 @@
-import image from 'next/image'
-import Link from 'next/link'
+// src/components/header/header.tsx
+import Link from 'next/link';
 
 export default function Header() {
-    return (
-    <>
-        <header className="full-container py-10">
-            <nav className="space-x-5 flex">
-                <Link href="/">
-                    <a className="hover:bg-gray-400 rounded py-1 px-2">Home</a>
-                </Link>
-                <Link href="https://ademcancerteldev.medium.com/">
-                    <a className="hover:bg-gray-400 rounded py-1 px-2">Blog</a>
-                </Link>
-                <Link href="/about">
-                    <a className="hover:bg-gray-400 rounded py-1 px-2">About</a>
-                </Link>
-            </nav>
-            <hr className="mt-4 opacity-20" />
-        </header>
-    </>
-    )
+  return (
+    <header className="bg-gray-800 shadow-md py-4">
+      <nav className="flex justify-center space-x-10">
+        <Link href="/" className="text-lg font-semibold text-gray-300 hover:text-blue-400 transition-colors duration-200">
+          Home
+        </Link>
+        <Link href="/about" className="text-lg font-semibold text-gray-300 hover:text-blue-400 transition-colors duration-200">
+          About
+        </Link>
+        <Link href="/skills" className="text-lg font-semibold text-gray-300 hover:text-blue-400 transition-colors duration-200">
+          Skills
+        </Link>
+        <Link href="/projects" className="text-lg font-semibold text-gray-300 hover:text-blue-400 transition-colors duration-200">
+          Projects
+        </Link>
+        <Link href="/contact" className="text-lg font-semibold text-gray-300 hover:text-blue-400 transition-colors duration-200">
+          Contact
+        </Link>
+      </nav>
+    </header>
+  );
 }
