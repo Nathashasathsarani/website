@@ -1,20 +1,16 @@
-export default function Edu() {
+// src/components/education/Education.tsx
+const Education = () => {
     return (
-        <>
-            <div className="overflow-hidden">
-                <a href="https://alibeyeml.meb.k12.tr/tema/index.php" target="_blank" className="text-white font-semibold">
-                    <h3>Alibeyköy MTAL</h3>
-                </a>
-                <div className="flex space-x-2 divide-x-2 divide-gray 300 text-white items-center">
-                    <div className="flex space-x-2 flex-shrink-0 items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="h-4 w-4"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                        <span className="text-opacity-25">2019 -</span>
-                    </div>
-                    <div className="pl-2 truncate text-opacity-20">
-                        Computer Aided Drawing Of Machine Technologies
-                    </div>
-                </div>
-            </div>
-        </>
-    )
-}
+        <div className="overflow-hidden p-6 bg-blue-900 rounded-lg shadow-lg max-w-3xl mx-auto mt-8">
+            <h1 className="text-white font-semibold text-2xl mb-4">
+                Hi, I’m Nathasha,
+            </h1>
+            <p className="text-gray-300 text-lg leading-relaxed">
+                I'm a second-year IT undergraduate with a passion for web app development, networking, software engineering, coding, and database management. 
+                I enjoy building functional and efficient applications, and my goal is to become a skilled software engineer contributing to impactful projects.
+            </p>
+        </div>
+    );
+};
+
+export default Education;
