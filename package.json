@@ -2,19 +2,22 @@
   "name": "website",
   "version": "1.0.0",
   "description": "They are the source code for my personal web page. Everything is available. NextJS is made using Tailwind CSS technologies.",
+  "homepage": "https://Nathashasathsarani.github.io/website/",
   "main": "",
-  "repository": "https://github.com/AdemCanCertel/website.git",
+  "repository": "https://github.com/Nathashasathsarani/website.git",
   "author": {
-    "name": "AdemCan Certel",
-    "email": "ademcancertel619@gmail.com",
-    "url": "https://ademcancertel.github.io"
+    "name": "Nathasha",
+    "email": "nathashasathsarani209@gmail.com",
+    "url": "https://github.com/Nathashasathsarani/website"
   },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "format": "prettier --write --check './{src}/**/*.{js,ts,tsx,jsx}'"
+    "format": "prettier --write --check './{src}/**/*.{js,ts,tsx,jsx}'",
+    "export": "next export",
+    "deploy": "gh-pages -d out"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
@@ -35,6 +38,7 @@
     "@typescript-eslint/eslint-plugin": "^4.4.1",
     "@typescript-eslint/parser": "^4.22.0",
     "autoprefixer": "^10.3.4",
+    "gh-pages": "^6.2.0",
     "postcss": "^8.3.6",
     "prettier": "^2.3.2",
     "tailwindcss": "^2.2.9",
