@@ -1,5 +1,7 @@
 // src/pages/index.tsx
 import Head from 'next/head';
+import Image from 'next/image';
+import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faEnvelope, faArrowRight, faQuoteLeft, faQuoteRight } from '@fortawesome/free-solid-svg-icons';
@@ -7,7 +9,7 @@ import { useEffect, useState } from 'react';
 
 library.add(faEnvelope, faArrowRight, faQuoteLeft, faQuoteRight);
 
-const HomePage: React.FC = () => {  // Explicitly define this as a React Functional Component
+const HomePage = () => {
     const [welcomeMessage, setWelcomeMessage] = useState("");
     const welcomeTexts = [
         "Welcome to my personal website!",
@@ -59,17 +61,6 @@ const HomePage: React.FC = () => {  // Explicitly define this as a React Functio
                     <h2 className="text-4xl font-bold animate__animated animate__fadeIn">{welcomeMessage}</h2>
                 </div>
 
-<<<<<<< HEAD
-                {/* Header Section */}
-                <div className="flex items-center mb-12">
-                    <div>
-                        <h1 className="text-5xl font-extrabold mb-8 animate__animated animate__fadeIn">Nathasha Sathsarani</h1>
-                        <h2 className="text-lg mb-4 animate__animated animate__fadeIn">IT Undergraduate</h2>
-                    </div>
-                </div>
-
-=======
->>>>>>> b06f68a (Resolved merge conflicts)
                 {/* About Section */}
                 <div className="max-w-8xl mb-12">
                     <h1 className="text-5xl font-extrabold mb-8 animate__animated animate__fadeIn">Nathasha Sathsarani</h1>
@@ -80,16 +71,18 @@ const HomePage: React.FC = () => {  // Explicitly define this as a React Functio
                 </div>
 
                 {/* Testimonials Section */}
-                <section className="mt-12 p-12 bg-gray-900 rounded-md shadow-md flex items-center justify-center">
-                    <blockquote className="text-3xl italic text-gray-300 flex items-center">
-                        <FontAwesomeIcon icon="quote-left" className="mr-6" />
-                        <span>It's not that we use technology, we live technology.</span>
-                        <FontAwesomeIcon icon="quote-right" className="ml-6" />
-                    </blockquote>
-                    <cite className="text-lg ml-8 text-gray-500">- Godfrey Reggio</cite>
-                </section>
-            </main>
-        </>
+<section className="mt-12 p-12 bg-gray-900 rounded-md shadow-md flex items-center justify-center">
+    <blockquote className="text-3xl italic text-gray-300 flex items-center">
+        <FontAwesomeIcon icon="quote-left" className="mr-6" />
+        <span>It's not that we use technology, we live technology.</span>
+        <FontAwesomeIcon icon="quote-right" className="ml-6" />
+    </blockquote>
+    <cite className="text-lg ml-8 text-gray-500">- Godfrey Reggio</cite>
+</section>
+
+
+                </main>
+            </>
     );
 };
 
