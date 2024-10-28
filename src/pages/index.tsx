@@ -1,6 +1,5 @@
 // src/pages/index.tsx
 import Head from 'next/head';
-import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faEnvelope, faArrowRight, faQuoteLeft, faQuoteRight } from '@fortawesome/free-solid-svg-icons';
@@ -8,7 +7,7 @@ import { useEffect, useState } from 'react';
 
 library.add(faEnvelope, faArrowRight, faQuoteLeft, faQuoteRight);
 
-const HomePage = () => {
+const HomePage: React.FC = () => {  // Explicitly define this as a React Functional Component
     const [welcomeMessage, setWelcomeMessage] = useState("");
     const welcomeTexts = [
         "Welcome to my personal website!",
@@ -60,6 +59,7 @@ const HomePage = () => {
                     <h2 className="text-4xl font-bold animate__animated animate__fadeIn">{welcomeMessage}</h2>
                 </div>
 
+<<<<<<< HEAD
                 {/* Header Section */}
                 <div className="flex items-center mb-12">
                     <div>
@@ -68,8 +68,12 @@ const HomePage = () => {
                     </div>
                 </div>
 
+=======
+>>>>>>> b06f68a (Resolved merge conflicts)
                 {/* About Section */}
                 <div className="max-w-8xl mb-12">
+                    <h1 className="text-5xl font-extrabold mb-8 animate__animated animate__fadeIn">Nathasha Sathsarani</h1>
+                    <h2 className="text-lg mb-4 animate__animated animate__fadeIn">IT Undergraduate</h2>
                     <p className="text-lg animate__animated animate__fadeIn">
                         I’m Nathasha, a second-year IT undergraduate with a passion for web app development, networking, software engineering, coding, and database management. I enjoy building functional and efficient applications, and I’m constantly expanding my knowledge in these areas. My ultimate goal is to become a skilled software engineer and contribute to innovative projects that make a difference.
                     </p>
